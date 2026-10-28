@@ -17,13 +17,48 @@ img { max-width: 100%; height: auto; }
 <h1>Lašu medības</h1>
 <p>Savāc pēc iespējas vairak lašu.</p>
 <section id="sakums">
-  <h2>Sākuma ekrāns</h2>
+  <h2>Lai sāktu spēli spied pogu zemāk</h2>
   <button onclick="paraditSpeli()">Sākt spēli</button>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Līmeņu Menu</title>
+</head>
+<body>
+  <button onclick="showLevels()">Rādīt līmeņus</button>
+  <button onclick="hideLevels()">Paslēpt līmeņus</button>
+
+  <div id="levels" style="display: none; margin-top: 12px;">
+    <button onclick="chooseLevel(1)">Līmenis 1</button>
+    <button onclick="chooseLevel(2)">Līmenis 2</button>
+    <button onclick="chooseLevel(3)">Līmenis 3</button>
+  </div>
+
+  <p id="message"></p>
+
+  <script>
+    function showLevels() {
+      document.getElementById("levels").style.display = "block";
+    }
+
+    function hideLevels() {
+      document.getElementById("levels").style.display = "none";
+    }
+
+    function chooseLevel(Līmenis) {
+      document.getElementById("message").textContent =
+        "Tavs līmenis ir izvēlēts: Līmenis " + Līmenis;
+    }
+  </script>
+</body>
+</html>
 </section>
 <section id="laukums" hidden>
   <h2>Spēles ekrāns</h2>
   <p>Punkti: 0</p>
-  <p>Šeit vēlāk būs spēlētājs.</p>
+  <p>Šeit vēlāk būs spēlētājs kas skraidot mēģinās tev nozagāt lašus kurus esi jau savācis.</p>
   <button onclick="paraditSakumu()">Atpakaļ</button>
 </section>
 <script>
