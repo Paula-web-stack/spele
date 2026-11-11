@@ -13,47 +13,58 @@ img, audio { max-width: 100%; }
 
 /* NOFORMĒ ŠEIT: pielieto 2.1. un 2.2. nodarbībā apgūto CSS */
 body {
-  background-color: #ffffff;
-  color: #222222;
+  background-color: #e6d0c8;
+  color: #1606f1;
 }
 
 h1 {
-  color: #222222;
+  color: #f31f1f;
+  font-size: 36px;
+  text-align: center; 
 }
 
 .noteikumi {
-  background-color: #f1f5f9;
-  color: #222222;
-  padding: 12px;
+  background-color: #9bb8d4;
+  color: #ec2121;
+  padding: 16px;
+  border-radius: 12px;
 }
 
 .laukums {
   width: 360px;
-  padding: 12px;
-  border: 2px solid #94a3b8;
+  padding: 20px;
+  border: 2px dashed #94a3b8;
   background-color: #f8fafc;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 100%;
+  text-align: center;
   box-sizing: border-box;
 }
 
 button {
-  background-color: #245b91;
-  color: #ffffff;
+  background-color: #e100ff;
+  color: #000000;
   border: 0;
+  border-radius: 8px;
 }
 </style>
 </head>
 <body>
 <h1>Lābākā Lašu spēle kas ir vispār bijusi līdz šim!</h1>
-<p>Būs lauks kur pēc izvēlētā režīma uz mirkli parādīsies zivis uz kurām tev būs jāpaspēj uzklikšķināt.</p>
+<p>Lašu spēle atrodama zemāk.</p>
 <section class="noteikumi">
-  <h2>Noteikumi</h2>
-  <p>Apraksti, kā spēlētājs šajā lapā iegūst punktus un noklausās skaņu.</p>
+  <h2>Noteikumi:</h2>
+  <p>Būs lauks kur pēc izvēlētā režīma uz mirkli parādīsies zivis uz kurām tev būs jāpaspēj uzklikšķināt.</p>
+  <p>Jo vairāk lašu tu savāksi jo labāka būs tava balva! izmantot palīgrīkus nedrīkst.</p>
 </section>
 <div class="laukums">
   <h2>Spēles laukums</h2>
-  <img src="Varonis.png" alt="Spēles varonis" width="128">
-  <p>Skaņas efekta nozīme spēlē:</p>
-  <audio controls src="ipasus_lasus.wav"></audio>
+  <img src="atteli/Varonis.png" alt="Spēles varonis" width="128">
+  <p> Šī ir skaņas efekta nozīme spēlē:</p>
+  </p>Dabūjot Lasi Būs Noteikta Skaņa Noteiktai Laša Vērtībai</p>
+  <audio controls src="skanas/ipasus_lasus.wav"></audio>
   <p id="punkti">Punkti: 0</p>
   <button onclick="savakt()">Savākt punktu</button>
 </div>
