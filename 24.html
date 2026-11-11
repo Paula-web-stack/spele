@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lašu ķeršanas skaņas</title>
+<style>
+/* Pamata izkārtojums — šīs rindas nemaini */
+body { font-family: Arial, sans-serif; max-width: 680px; margin: 24px auto; padding: 16px; line-height: 1.6; }
+button, input { font: inherit; padding: 10px; margin: 4px; cursor: pointer; }
+img, audio { max-width: 100%; }
+[hidden] { display: none !important; }
+
+/* MAINI ŠEIT: skaņas bloku izskats */
+.skana {
+  background-color: #09437e;
+  border: 2px solid #f3c90c;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<h1>Lašu ķeršanas skaņas</h1>
+<p>Noklausies lašu ķeršanas skaņas efektus ar atskaņošanas pogu.</p>
+<div class="skana">
+  <h2>Viena no labākajām skaņām kura bus tikai īpašiem lašiem!!</h2>
+  <p>Šo skaņu dzirdēsi, kad savāksi Lašus.</p>
+  <audio controls src="klikskis.wav"></audio>
+</div>
+<!-- ŠEIT OTRAIS SKAŅAS BLOKS -->
+<div class="skana">
+  <h2>Šī skaņa būs atskaņota kad iegūsi īpašus lašus</h2>
+  <p>Šo skaņu dzirdēsi, kad iegūsi īpašus lašus.</p>
+  <audio controls src="ipasus_lasus.wav"></audio>
+</div>
+</body>
+</html>
